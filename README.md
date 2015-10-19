@@ -30,6 +30,7 @@ This is a starter boiler plate app I've put together using the following technol
 * [lru-memoize](https://github.com/erikras/lru-memoize) to speed up form validation
 * [multireducer](https://github.com/erikras/multireducer) to combine single reducers into one key-based reducer
 * [style-loader](https://github.com/webpack/style-loader), [sass-loader](https://github.com/jtangelder/sass-loader) and [less-loader](https://github.com/webpack/less-loader) to allow import of stylesheets in plain css, sass and less,
+* [bootstrap-sass-loader](https://github.com/shakacode/bootstrap-sass-loader) and [font-awesome-webpack](https://github.com/gowravshekar/font-awesome-webpack) to customize Bootstrap and FontAwesome
 * [react-document-meta](https://github.com/kodyl/react-document-meta) to manage title and meta tag information on both server and client
 * [webpack-isomorphic-tools](https://github.com/halt-hammerzeit/webpack-isomorphic-tools) to allow require() work for statics both on client and server
 * [mocha](https://mochajs.org/) to allow writing unit tests for the project.
@@ -67,7 +68,7 @@ If you are the kind of person that learns best by following along a tutorial, I 
 
 ## Explanation
 
-What initally gets run is `bin/server.js`, which does little more than enable ES6 and ES7 awesomeness in the
+What initially gets run is `bin/server.js`, which does little more than enable ES6 and ES7 awesomeness in the
 server-side node code. It then initiates `server.js`. In `server.js` we proxy any requests to `/api/*` to the
 [API server](#api-server), running at `localhost:3030`. All the data fetching calls from the client go to `/api/*`.
 Aside from serving the favicon and static content from `/static`, the only thing `server.js` does is initiate delegate
