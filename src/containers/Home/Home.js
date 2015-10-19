@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import { CounterButton } from 'components';
 
 export default class Home extends Component {
@@ -14,6 +13,7 @@ export default class Home extends Component {
           <CounterButton multireducerKey="counter2"/>
           <CounterButton multireducerKey="counter3"/>
         </div>
+        <img src={logoImage}/>
       </div>
     );
   }

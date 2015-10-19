@@ -6,7 +6,7 @@ import {
     NotFound,
   } from 'containers';
 
-export default (store) => {
+export default () => {
 
   /**
    * Please keep routes in alphabetical order

@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import { IndexLink, Link } from 'react-router';
 import DocumentMeta from 'react-document-meta';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 
@@ -51,6 +50,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <DocumentMeta {...meta}/>
         {this.props.children}
       </div>
     );
