@@ -41,7 +41,7 @@ module.exports = {
     ]
   },
   postcss: [
-    require('autoprefixer-core')({browsers: 'last 2 versions'})
+    require('autoprefixer')({browsers: 'last 2 versions'})
   ],
   progress: true,
   resolve: {
